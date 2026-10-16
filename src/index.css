@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    background: white;
+    color: black;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

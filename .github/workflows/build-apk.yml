@@ -1,0 +1,47 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Allows manual one-click build from GitHub UI
+
+jobs:
+  build:
+    name: Build Narayani Devi Girls College ERP APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Grant Execute Permission to Gradlew
+        run: |
+          cd android
+          chmod +x gradlew || true
+
+      - name: Build Debug APK
+        run: |
+          cd android
+          if [ ! -f "gradlew" ]; then
+            gradle wrapper --gradle-version 8.7
+          fi
+          chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NarayaniDeviGirlsCollegeERP-Debug-APK
+          path: android/app/build/outputs/apk/debug/*.apk
+          retention-days: 14

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">नारायणी देवी कॉलेज ERP</string>
+    <string name="college_name">नारायणी देवी महिला महाविद्यालय</string>
+    <string name="college_full_name">नारायणी देवी महिला महाविद्यालय, सुल्ताना</string>
+    <string name="college_location">सुल्ताना, झुंझुनूं (राजस्थान)</string>
+    <string name="college_motto">विद्यया अमृतमश्नुते</string>
+    <string name="affiliation">पंडित दीनदयाल उपाध्याय शेखावाटी विश्वविद्यालय, सीकर से संबद्ध</string>
+
+    <!-- Authentication -->
+    <string name="login_title">कॉलेज ERP पोर्टल</string>
+    <string name="username">यूजरनेम / स्कॉलर संख्या</string>
+    <string name="password">पासवर्ड</string>
+    <string name="captcha_label">सुरक्षा प्रश्न (CAPTCHA)</string>
+    <string name="captcha_answer">उत्तर</string>
+    <string name="btn_login">ERP में लॉगिन करें</string>
+    <string name="remember_me">याद रखें</string>
+    <string name="portal_admin">प्राचार्य / Admin</string>
+    <string name="portal_staff">शिक्षक / Staff</string>
+    <string name="portal_student">छात्रा / Student</string>
+    <string name="logging_in">ndedu.in सर्वर से संपर्क हो रहा है…</string>
+
+    <!-- Modules -->
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="students">छात्राएं</string>
+    <string name="fees">शुल्क संकलन</string>
+    <string name="attendance">उपस्थिति</string>
+    <string name="notices">सूचना पट्ट</string>
+    <string name="profile">प्रोफाइल</string>
+    <string name="logout">लॉगआउट</string>
+
+    <!-- Student Module -->
+    <string name="student_search_hint">स्कॉलर सं., नाम अथवा मोबाइल से खोजें…</string>
+    <string name="btn_admission">नवीन प्रवेश</string>
+    <string name="scholar_no">स्कॉलर सं.</string>
+    <string name="course">पाठ्यक्रम</string>
+    <string name="year">वर्ष</string>
+    <string name="mobile">मोबाइल</string>
+    <string name="fee_balance">बकाया शुल्क</string>
+
+    <!-- Fees Module -->
+    <string name="amount_paid">जमा की जा रही राशि (₹)</string>
+    <string name="payment_mode">भुगतान माध्यम</string>
+    <string name="transaction_ref">UTR / चेक संदर्भ संख्या</string>
+    <string name="btn_collect_fee">भुगतान दर्ज करें व रसीद बनाएं</string>
+    <string name="receipt_no">रसीद संख्या</string>
+
+    <!-- Attendance Module -->
+    <string name="mark_all_present">सभी उपस्थित करें</string>
+    <string name="mark_all_absent">सभी अनुपस्थित करें</string>
+    <string name="btn_submit_attendance">उपस्थिति सुरक्षित करें</string>
+
+    <!-- General -->
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="success">सफलता</string>
+    <string name="error">त्रुटि</string>
+</resources>

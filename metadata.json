@@ -1,0 +1,8 @@
+{
+  "name": "Narayani Devi Girls College ERP",
+  "description": "Native Android & Web ERP for Narayani Devi Girls College, Sultana. Features secure HTTPS login with ndedu.in PHP APIs, student admission, fee collection & receipts, attendance, bilingual Hindi/English UI, and native Kotlin/Flutter export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
